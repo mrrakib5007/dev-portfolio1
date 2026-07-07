@@ -187,3 +187,52 @@ h1, h2, h3, h4, h5, h6, p {
     color: var(--dark-color);
 }
 
+/* what-i-do section style  */
+
+.what-i-do {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    margin-top: 3rem !important;
+    margin-bottom: 3rem !important;
+    padding: 0.3rem;
+}
+
+.what-i-do .section-description {
+    max-width: 70%;
+    margin: 0 auto;
+    text-align: center;
+    color: var(--dark3-color);
+}
+
+.what-i-do .card-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.8rem;
+    margin-top: 1.5rem;
+}
+
+.what-i-do .card-container .card {
+    background: white;
+    box-shadow: 0 10px 25px rgba(0,0,0,.2);
+    padding: 2.2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.7rem;
+    border-radius: 0.4rem;
+}
+
+.what-i-do .card-container .card img {
+    max-width: 2.8rem;
+
+}
+
+.what-i-do .card-container .card h3 {
+   color: var(--dark-color);
+   font-size: 1.2rem;
+}
+
+.what-i-do .card-container .card p {
+   color: var(--dark3-color);
+   font-size: 1.1rem;
+}
