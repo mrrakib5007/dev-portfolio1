@@ -7,12 +7,14 @@
     padding: 0; 
     box-sizing: border-box; 
     font-family: 'Open Sans'; 
+    color: var(--dark-color);
 }
 
 /* common style  */
 :root {
     --primary-color: #fd6e0a;
     --dark-color: #181818;
+    --dark2-color: #474747;
     --dark3-color: #757575;
 }
 
@@ -194,7 +196,7 @@ h1, h2, h3, h4, h5, h6, p {
     flex-direction: column;
     gap: 3rem;
     margin-top: 3rem !important;
-    margin-bottom: 3rem !important;
+    margin-bottom: 5rem !important;
     padding: 0.3rem;
 }
 
@@ -236,3 +238,58 @@ h1, h2, h3, h4, h5, h6, p {
    color: var(--dark3-color);
    font-size: 1.1rem;
 }
+
+/* my-resume-section style  */
+.my-resume-section {
+    margin-top: 5rem !important;
+    margin-bottom: 5rem !important;
+}
+
+.my-resume-body {
+    margin: 3rem 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;    
+}
+
+.my-resume-body h2 {
+    color: var(--dark2-color);
+    padding: 0 0.5rem;
+ }
+
+.my-resume-card-container {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 2rem;
+    margin-top: 2rem;    
+    padding: 0.5rem;
+}
+
+.my-resume-card-container .card h3{
+    color: var(--dark2-color);
+    margin-bottom: 0.5rem;    
+ }
+
+.my-resume-card-container .card h4{
+    color: var(--dark3-color);
+    margin-bottom: 1rem;
+    font-weight: 600;
+ }
+
+.my-resume-card-container .card p{
+    color: var(--dark3-color);
+     margin-bottom: 1rem;
+ }
+.my-resume-card-container .card hr{
+    height: 1px;
+    border: none;
+    background: #00000015;
+ }
+
+ .my-resume-section .download-cv-btn {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+ }
+
+ 
