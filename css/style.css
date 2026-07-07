@@ -1,13 +1,29 @@
+/* Open Sans Google Font Import  */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
+/* Reset style  */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Open Sans';
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+    font-family: 'Open Sans'; 
 }
 
 /* common style  */
+:root {
+    --primary-color: #fd6e0a;
+    --dark-color: #181818;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
 .btn {
     border: none;
     padding: 10px 14px;
@@ -15,30 +31,54 @@
     font-weight: 700;
     cursor: pointer;
     border-radius: 0.35rem;
+    background: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    color: white;
 }
 
+.btn-outline {
+    border: none;
+    padding: 10px 13px;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    border-radius: 0.35rem;
+    background: none;
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+}
+
+
+
+/* Header Section Style  */
 .header {
-   background: #fff8f3FF;
-   height: 100vh;   
+    position: relative;
+    background: #fff8f3;    
+   /* background: #0000004d; */
+}
+
+.header .developer-img {
+    position: absolute;
+    max-height: 500px;
+    top: 0.9rem;
+    left: 0.8rem;
 }
 
 .navbar {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    margin: auto;
+    align-items: center;    
     padding: 0.75rem 0;   
 }
 
 .navbar .logo {
-    color: #181818FF;
+    color: var(--dark-color);
     font-size: 2rem;
     margin: 0;
 }
 
 .navbar .logo span {
-    color:#fd6e0a;
+    color: var(--primary-color);
 }
 
 .navbar ul {
@@ -54,8 +94,51 @@
     font-size: 1rem;
 }
 
-.navbar ul li .btn {
-    background: #fd6e0a;
-    color: white;
+/* Banner Section Style  */
+
+.banner {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.25rem;
 }
 
+.hero-left h3 {
+    color: #757575;
+}
+
+.hero-left h1 {
+    font-size: 3.5rem;
+    margin: 0.8rem 0;
+    color: var(--dark-color);
+}
+
+.hero-left p {
+    color: #757575;
+    margin-bottom: 1.25rem;
+}
+
+.hero-left .hero-btn-container {
+    display: flex; 
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.hero-right {
+    display: flex;
+    justify-content: end;
+    position: relative;
+}
+
+.hero-right img{
+    max-height: 500px;
+    z-index: 1;
+}
+
+.hero-right .hero-bg-img{ 
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    max-height: 400px;
+}
