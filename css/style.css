@@ -10,16 +10,20 @@
     color: var(--dark-color);
 }
 
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
 /* common style  */
 :root {
     --primary-color: #fd6e0a;
     --dark-color: #181818;
     --dark2-color: #474747;
     --dark3-color: #757575;
-}
-
-h1, h2, h3, h4, h5, h6, p {
-    margin: 0;
 }
 
 .container {
@@ -292,4 +296,46 @@ h1, h2, h3, h4, h5, h6, p {
     align-items: center;
  }
 
- 
+ /* My Amazing Works style  */
+
+ .my-work-section {
+    padding: 0.5rem;
+    margin-top: 5rem !important;
+    margin-bottom: 5rem !important;
+ }
+
+ .gallary-container {
+    display: grid;
+    grid-template-areas: 
+    "img1 img2 img3"
+    "img4 img2 img6"
+    "img4 img5 img6"
+    ;
+    gap: 1rem;    
+ }
+
+  .gallary-container img {
+    width: 100%;    
+    height: 100%;
+    background-size: cover;
+    margin-top: 3rem;
+  }
+
+ .gallary-container .mywork-img1 {
+    grid-area: img1;
+  }
+ .gallary-container .mywork-img2 {
+    grid-area: img2;
+  }
+ .gallary-container .mywork-img3 {
+    grid-area: img3;
+  }
+ .gallary-container .mywork-img4 {
+    grid-area: img4;
+  }
+ .gallary-container .mywork-img5 {
+    grid-area: img5;
+  }
+ .gallary-container .mywork-img6 {
+    grid-area: img6;
+  }
