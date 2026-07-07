@@ -13,6 +13,7 @@
 :root {
     --primary-color: #fd6e0a;
     --dark-color: #181818;
+    --dark3-color: #757575;
 }
 
 h1, h2, h3, h4, h5, h6, p {
@@ -105,7 +106,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .hero-left h3 {
-    color: #757575;
+    color: var(--dark3-color);
 }
 
 .hero-left h1 {
@@ -115,7 +116,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .hero-left p {
-    color: #757575;
+    color: var(--dark3-color);
     margin-bottom: 1.25rem;
 }
 
@@ -142,3 +143,47 @@ h1, h2, h3, h4, h5, h6, p {
     right: 0;
     max-height: 400px;
 }
+
+
+/* about-me section design  */
+
+.about-me {
+    margin-top: 7rem;
+    margin-bottom: 7rem;
+    background: #fff8f3;
+    padding: 6rem 12rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 2rem;
+}
+
+.section-header {
+    text-align: center;
+    font-size: 1.5rem;
+    color: var(--dark-color);
+}
+
+.about-me .about-me-description{
+    color: var(--dark3-color);
+ }
+
+.about-me-footer {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.about-me-footer .box {
+    padding: 0.3rem 0.5rem;
+}
+
+.about-me-footer .box p {
+    color: var(--dark3-color);
+}
+
+.about-me-footer .box h3 {
+    color: var(--dark-color);
+}
+
