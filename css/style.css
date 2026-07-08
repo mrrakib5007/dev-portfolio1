@@ -339,3 +339,101 @@ img {
  .gallary-container .mywork-img6 {
     grid-area: img6;
   }
+
+  /* footer section style  */
+  .footer {
+    background: #fff8f3;
+    margin-top: 10rem;
+    padding: 5rem 0; 
+  }
+
+  .footer-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.5rem;  
+    padding: 0rem 0.5rem;   
+  }
+
+  .footer-left {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .footer-left h3 {
+    color: var(--dark-color);
+    font-size: 1.5rem;
+  }
+
+  .footer-left p {
+    color: var(--dark3-color);
+    font-size: 0.9rem;
+  }
+
+  .footer-left .footer-icon-container {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+  }
+
+  .footer-icon-container .icon {
+    background: white;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    box-shadow: 0 5px 15px rgba(0,0,0,.2); 
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+
+    .footer-icon-container .icon i {
+        color: var(--primary-color);
+        font-size: 1.2rem;
+        transition: all 0.3s;
+    }
+
+      .footer-icon-container .icon:hover {
+        background:var(--primary-color);        
+      }
+
+    .footer-icon-container .icon:hover i {
+        color: white;
+    }
+
+    .footer-right {
+        padding: 0 1rem;
+    }
+
+
+    .footer-right-form {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+  .footer-right-form h3 {
+    color: var(--dark-color);
+    font-size: 1.5rem;
+  }
+
+    .footer-right-form input, textarea {
+        border: none;
+        outline: none;
+        background: white;
+        border: 1px solid #f0f0f0;
+        padding: 0.9rem;
+        border-radius: 0.25rem;
+    }
+
+      .footer-right-form textarea {
+        resize: none;
+        height: 150px;
+      }
+
+/* ============================================
+      Project Done by Mahabub Rahman Rakib 
+      Username: mrrakib5007
+ ============================================ */
